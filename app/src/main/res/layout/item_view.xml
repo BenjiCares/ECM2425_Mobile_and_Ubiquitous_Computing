@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/relLay">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/weatherImageView"
+        android:layout_marginEnd="5dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="Weather image"
+        />
+
+    <TextView
+        android:id="@+id/temperatureText"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/weatherImageView"
+        android:text="115°F"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dayTimeText"
+        android:layout_toEndOf="@id/temperatureText"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="10dp"
+        android:layout_centerVertical="true"
+        android:text="dateTime"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherText"
+        android:layout_toEndOf="@id/dayTimeText"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_centerVertical="true"
+        android:text="weatherDescription"/>
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/shareImageView"
+        android:layout_centerVertical="true"
+        android:contentDescription="Share button"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/weatherImageView"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
